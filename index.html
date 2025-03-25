@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #ff5733;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .menu-item {
+            background: white;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 200px;
+        }
+        .menu-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .order-btn {
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .order-btn:hover {
+            background-color: #e04e2b;
+        }
+    </style>
+</head>
+<body>
+    <header>Delicious Restaurant</header>
+    <div class="menu">
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/200" alt="Burger">
+            <h3>Burger</h3>
+            <p>$5.99</p>
+            <form action="https://formspree.io/f/manebeap" method="POST">
+                <input type="hidden" name="order" value="Burger - $5.99">
+                <input type="email" name="email" placeholder="Your Email" required>
+                <button type="submit" class="order-btn">Order Now</button>
+            </form>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/200" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>$8.99</p>
+            <form action="https://formspree.io/f/manebeap" method="POST">
+                <input type="hidden" name="order" value="Pizza - $8.99">
+                <input type="email" name="email" placeholder="Your Email" required>
+                <button type="submit" class="order-btn">Order Now</button>
+            </form>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/200" alt="Pasta">
+            <h3>Pasta</h3>
+            <p>$6.99</p>
+            <form action="https://formspree.io/f/manebeap" method="POST">
+                <input type="hidden" name="order" value="Pasta - $6.99">
+                <input type="email" name="email" placeholder="Your Email" required>
+                <button type="submit" class="order-btn">Order Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
